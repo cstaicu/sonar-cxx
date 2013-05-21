@@ -4686,10 +4686,12 @@
     (Rule 98/19.12) Multiple use of '#' and/or '##' operators in macro definition.
     (Rule 100/19.14) Non-standard use of 'defined' preprocessor operator.
 
+
     Required checks made exclusively for MISRA 1998 are:
     (Rule 58) break used outside of a switch.
     (Rule 88) Header file name contains non-standard character.
     (Rule 110) Bitfields inside union.
+
 
     Required checks made exclusively for MISRA 2004 are:
     (Rule 8.5) No definitions of objects or function in header files.
@@ -4705,7 +4707,9 @@
     (Rule 18.4) Unions shall not be used.
     (Rule 19.6) Use of '#undef' prohibited
 
+
     MISRA 1998 checking is achieved using the -misra(1) option. For MISRA 2004 checks, use -misra(2).
+
 
     You may disable individual rules to your taste by using the Rule number in an esym option. For example:
     -esym( 960, 75, 8? )
@@ -5917,6 +5921,7 @@
     or protected) is lower than the access of the function returning
     the address.  For example:
 
+
     class X
     {
     private:
@@ -5925,11 +5930,13 @@
     int *f() { return &amp;a; }
     };
 
+
     This looks like a breach of the access system [12, Item 30].  You
     may lower the access rights of the function, raise the
     accessibility of the member or make the return value a const
     pointer or reference.  In the above example you could change the
     function to:
+
 
     const int *f() { return &amp;a; }
     </description>
@@ -7253,4 +7260,1467 @@
     <description>This message is issued for some violations of the MISRA C++ advisory guidelines. We suggest use of the options file au-misra-cpp.lnt to activate these and other MISRA C++ messages.
     The list of checks made are as follows: (Rule 2-5-1) Possible digraph used. (Rule 5-0-2) Dependence placed on C's operator precedence. (Rule 14-8-2) Mixing template and non-template functions in a viable sets. (Rule 15-0-2) Throwing a pointer expression. (Rule 16-2-5) Header file name with non-standard character. (Rule 16-3-2) No use of '#' or '##'.</description>
   </rule>
+  
+  <rule>
+    <key>M1.1</key>
+    <configkey>M1.1</configkey>
+    <priority>INFO</priority>
+    <name>Strict ANSI checking, MISRA Rule 1.1</name>
+    <description>    
+    Strict ANSI checking, MISRA Rule 1.1</description>
+  </rule>
+  <rule>
+    <key>M1.2</key>
+    <configkey>M1.2</configkey>
+    <priority>INFO</priority>
+    <name>No undefined or unspecified behavior, MISRA Rule 1.2 </name>
+    <description>    
+    No undefined or unspecified behavior, MISRA Rule 1.2</description>
+  </rule>
+  <rule>
+    <key>M1.4</key>
+    <configkey>M1.4</configkey>
+    <priority>INFO</priority>
+    <name>Identifier names must be unique in first 31 characters, MISRA Rule 1.4</name>
+    <description>    
+    Identifier names must be unique in first 31 characters, MISRA Rule 1.4: </description>
+  </rule>
+  <rule>
+    <key>M2.1</key>
+    <configkey>M2.1</configkey>
+    <priority>INFO</priority>
+    <name>No in-line assembly language, MISRA Rule 2.1</name>
+    <description>    
+    No in-line assembly language, MISRA Rule 2.1</description>
+  </rule>
+  <rule>
+    <key>M2.2</key>
+    <configkey>M2.2</configkey>
+    <priority>INFO</priority>
+    <name>Do not use // comments, MISRA Rule 2.2</name>
+    <description>    
+    Do not use // comments, MISRA Rule 2.2</description>
+  </rule>
+  <rule>
+    <key>M2.3</key>
+    <configkey>M2.3</configkey>
+    <priority>INFO</priority>
+    <name>No nested comments, MISRA Rule 2.3</name>
+    <description>    
+    No nested comments</description>
+  </rule>
+  <rule>
+    <key>M2.4</key>
+    <configkey>M2.4</configkey>
+    <priority>INFO</priority>
+    <name>No nested comments, MISRA advisory Rule 2.4</name>
+    <description>    
+    No nested comments</description>
+  </rule>
+  <rule>
+    <key>M3.4</key>
+    <configkey>M3.4</configkey>
+    <priority>INFO</priority>
+    <name>Report on pragma use, MISRA Rule 3.4</name>
+    <description>    
+    Report on pragma use</description>
+  </rule>
+  <rule>
+    <key>M3.6</key>
+    <configkey>M3.6</configkey>
+    <priority>INFO</priority>
+    <name>libraries should conform to MISRA standard, MISRA Rule 3.6</name>
+    <description>    
+    libraries should conform to MISRA standard</description>
+  </rule>
+  <rule>
+    <key>M4.1</key>
+    <configkey>M4.1</configkey>
+    <priority>INFO</priority>
+    <name>do not use non-ANSI escape sequences, MISRA Rule 4.1</name>
+    <description>    
+    do not use non-ANSI escape sequences</description>
+  </rule>
+  <rule>
+    <key>M4.2</key>
+    <configkey>M4.2</configkey>
+    <priority>INFO</priority>
+    <name>do not use trigraphs, MISRA Rule 4.2</name>
+    <description>    
+    do not use trigraphs</description>
+  </rule>
+  <rule>
+    <key>M5.1</key>
+    <configkey>M5.1</configkey>
+    <priority>INFO</priority>
+    <name>identifier names must be unique in first 31 characters, MISRA Rule 5.1</name>
+    <description>    
+    identifier names must be unique in first 31 characters</description>
+  </rule>
+  <rule>
+    <key>M5.2</key>
+    <configkey>M5.2</configkey>
+    <priority>INFO</priority>
+    <name>complain about name hiding, MISRA Rule 5.2</name>
+    <description>    
+    complain about name hiding</description>
+  </rule>
+  <rule>
+    <key>M5.3</key>
+    <configkey>M5.3</configkey>
+    <priority>INFO</priority>
+    <name>Do not reuse typedef names, MISRA Rule 5.3</name>
+    <description>    
+    Do not reuse typedef names</description>
+  </rule>
+  <rule>
+    <key>M5.4</key>
+    <configkey>M5.4</configkey>
+    <priority>INFO</priority>
+    <name>Do not reuse tag names, MISRA Rule 5.4</name>
+    <description>    
+    Do not reuse tag names</description>
+  </rule>
+  <rule>
+    <key>M5.5</key>
+    <configkey>M5.5</configkey>
+    <priority>INFO</priority>
+    <name>Complain about name hiding, MISRA advisory Rule 5.5</name>
+    <description>    
+    Complain about name hiding</description>
+  </rule>
+  <rule>
+    <key>M5.6</key>
+    <configkey>M5.6</configkey>
+    <priority>INFO</priority>
+    <name>Complain about name hiding, MISRA advisory Rule 5.6</name>
+    <description>    
+    Complain about name hiding</description>
+  </rule>
+  <rule>
+    <key>M5.7</key>
+    <configkey>M5.7</configkey>
+    <priority>INFO</priority>
+    <name>Do not reuse identifier names, MISRA advisory Rule 5.7</name>
+    <description>    
+    Do not reuse identifier names</description>
+  </rule>
+  <rule>
+    <key>M6.1</key>
+    <configkey>M6.1</configkey>
+    <priority>INFO</priority>
+    <name>disallowed use of plain char, MISRA Rule 6.1</name>
+    <description>    
+    disallowed use of plain char</description>
+  </rule>
+  <rule>
+    <key>M6.2</key>
+    <configkey>M6.2</configkey>
+    <priority>INFO</priority>
+    <name>disallowed use of plain char, MISRA Rule 6.2</name>
+    <description>    
+    disallowed use of plain char</description>
+  </rule>
+  <rule>
+    <key>M6.3</key>
+    <configkey>M6.3</configkey>
+    <priority>INFO</priority>
+    <name>do not use modifiers (int, char, etc) outside of a typedef, MISRA advisory rule 6.3</name>
+    <description>    
+    do not use modifiers (int, char, etc) outside of a typedef</description>
+  </rule>
+  <rule>
+    <key>M6.4</key>
+    <configkey>M6.4</configkey>
+    <priority>INFO</priority>
+    <name>bitfield type should be unsigned int or signed int, MISRA rule 6.4</name>
+    <description>    
+    bitfield type should be unsigned int or signed int</description>
+  </rule>
+  <rule>
+    <key>M6.5</key>
+    <configkey>M6.5</configkey>
+    <priority>INFO</priority>
+    <name>small bit field should be unsigned int, MISRA rule 6.5</name>
+    <description>    
+    small bit field should be unsigned int</description>
+  </rule>
+  <rule>
+    <key>M7.1</key>
+    <configkey>M7.1</configkey>
+    <priority>INFO</priority>
+    <name>Octal constant used, MISRA Rule 7.1</name>
+    <description>    
+    Octal constant used. </description>
+  </rule>
+  <rule>
+    <key>M8.1</key>
+    <configkey>M8.1</configkey>
+    <priority>INFO</priority>
+    <name>use function prototypes, MISRA Rule 8.1 </name>
+    <description>    
+    use function prototypes </description>
+  </rule>
+  <rule>
+    <key>M8.2</key>
+    <configkey>M8.2</configkey>
+    <priority>INFO</priority>
+    <name>function has no explicit type, MISRA Rule 8.2 </name>
+    <description>    
+    function has no explicit type</description>
+  </rule>
+  <rule>
+    <key>M8.3</key>
+    <configkey>M8.3</configkey>
+    <priority>INFO</priority>
+    <name>declaration and definition should have identical parameter types, MISRA Rule 8.3</name>
+    <description>    
+    declaration and definition should have identical parameter types</description>
+  </rule>
+  <rule>
+    <key>M8.4</key>
+    <configkey>M8.4</configkey>
+    <priority>INFO</priority>
+    <name>symbol redeclared, MISRA Rule 8.4</name>
+    <description>    
+    symbol redeclared</description>
+  </rule>
+  <rule>
+    <key>M8.5</key>
+    <configkey>M8.5</configkey>
+    <priority>INFO</priority>
+    <name>No definitions of objects or function in header files, MISRA Rule 8.5</name>
+    <description>        
+    No definitions of objects or function in header files.</description>
+  </rule>
+  <rule>
+    <key>M8.6</key>
+    <configkey>M8.6</configkey>
+    <priority>INFO</priority>
+    <name>Function not declared at file scope, MISRA Rule 8.6</name>
+    <description>            
+    Function not declared at file scope.</description>
+  </rule>
+  <rule>
+    <key>M8.7</key>
+    <configkey>M8.7</configkey>
+    <priority>INFO</priority>
+    <name>could define variable at block scope, MISRA Rule 8.7</name>
+    <description>            
+    could define variable at block scope</description>
+  </rule>
+  <rule>
+    <key>M8.8</key>
+    <configkey>M8.8</configkey>
+    <priority>INFO</priority>
+    <name>object/function previously declared, MISRA Rule 8.8</name>
+    <description>            
+    object/function previously declared</description>
+  </rule>
+  <rule>
+    <key>M8.9</key>
+    <configkey>M8.9</configkey>
+    <priority>INFO</priority>
+    <name>symbol previously defined, MISRA Rule 8.9</name>
+    <description>            
+    symbol previously defined</description>
+  </rule>
+  <rule>
+    <key>M8.10</key>
+    <configkey>M8.10</configkey>
+    <priority>INFO</priority>
+    <name>symbol could be made static, MISRA Rule 8.10</name>
+    <description>            
+    symbol could be made static</description>
+  </rule>
+  <rule>
+    <key>M8.11</key>
+    <configkey>M8.11</configkey>
+    <priority>INFO</priority>
+    <name>symbol previously used as static, MISRA Rule 8.11</name>
+    <description>            
+    symbol previously used as static</description>
+  </rule>
+  <rule>
+    <key>M8.12</key>
+    <configkey>M8.12</configkey>
+    <priority>INFO</priority>
+    <name>array has 0 dimension, MISRA Rule 8.12</name>
+    <description>            
+    array has 0 dimension</description>
+  </rule>
+  <rule>
+    <key>M9.1</key>
+    <configkey>M9.1</configkey>
+    <priority>INFO</priority>
+    <name>symbol not initialized, MISRA Rule 9.1</name>
+    <description>            
+    symbol not initialized</description>
+  </rule>
+  <rule>
+    <key>M9.2</key>
+    <configkey>M9.2</configkey>
+    <priority>INFO</priority>
+    <name>omitted braces within an initializer, MISRA Rule 9.2</name>
+    <description>            
+    omitted braces within an initializer</description>
+  </rule>
+  <rule>
+    <key>M93</key>
+    <configkey>M93</configkey>
+    <priority>INFO</priority>
+    <name>Should initialize either all enum members or only the first, MISRA Rule 9.3</name>
+    <description>                        
+    Should initialize either all enum members or only the first.</description>
+  </rule>
+  <rule>
+    <key>M10.1</key>
+    <configkey>M10.1</configkey>
+    <priority>INFO</priority>
+    <name>loss of precision / possible loss of fraction, MISRA Rule 10.1</name>
+    <description>        
+    The value of an expression of integer type shall not be implicitly converted to a different underlying type if:
+    a) it is not a conversion to a wider integer type of the same signedness, or
+    b) the expression is complex, or
+    c) the expression is not constant and is a function argument, or
+    d) the expression is not constant and is a return expression</description>
+  </rule>
+  <rule>
+    <key>M10.2</key>
+    <configkey>M10.2</configkey>
+    <priority>INFO</priority>
+    <name>prototype coercion, MISRA Rule 10.2</name>
+    <description>        
+    prototype coercion</description>
+  </rule>
+  <rule>
+    <key>M10.3</key>
+    <configkey>M10.3</configkey>
+    <priority>INFO</priority>
+    <name>prohibited cast of complex integer expression, MISRA Rule 10.3</name>
+    <description>            
+    prohibited cast of complex integer expression</description>    
+  </rule> 
+  <rule>
+    <key>M10.4</key>
+    <configkey>M10.4</configkey>
+    <priority>INFO</priority>
+    <name>prohibited cast of complex floating point, MISRA Rule 10.4</name>
+    <description>            
+    prohibited cast of complex floating point</description>    
+  </rule> 
+  <rule>
+    <key>M10.5</key>
+    <configkey>M10.5</configkey>
+    <priority>INFO</priority>
+    <name>recasting required for &lt;&lt; and - operators, MISRA Rule 10.5</name>
+    <description>            
+    recasting required for &lt;&lt; and - operators</description>    
+  </rule>  
+  <rule>
+    <key>M10.6</key>
+    <configkey>M10.6</configkey>
+    <priority>INFO</priority>
+    <name>unsigned integer literals require a „U‟ suffix, MISRA Rule 10.6</name>
+    <description>            
+    unsigned integer literals require a „U‟ suffix</description>    
+  </rule>  
+  <rule>
+    <key>M11.1</key>
+    <configkey>M11.1</configkey>
+    <priority>INFO</priority>
+    <name>cast pointer to non-pointer, MISRA Rule 11.1</name>
+    <description>            
+    cast pointer to non-pointer</description>    
+  </rule> 
+  <rule>
+    <key>M11.2</key>
+    <configkey>M11.2</configkey>
+    <priority>INFO</priority>
+    <name>cast pointer to non-pointer, MISRA Rule 11.2</name>
+    <description>            
+    cast pointer to non-pointer</description>    
+  </rule> 
+  <rule>
+    <key>M11.3</key>
+    <configkey>M11.3</configkey>
+    <priority>INFO</priority>
+    <name>cast pointer to non-pointer, MISRA advisory Rule 11.3</name>
+    <description>            
+    cast pointer to non-pointer</description>    
+  </rule> 
+  <rule>
+    <key>M11.4</key>
+    <configkey>M11.4</configkey>
+    <priority>INFO</priority>
+    <name>cast pointer to pointer, MISRA advisory Rule 11.4</name>
+    <description>            
+    cast pointer to pointer</description>    
+  </rule> 
+  <rule>
+    <key>M11.5</key>
+    <configkey>M11.5</configkey>
+    <priority>INFO</priority>
+    <name>attempt to cast away const/volatile from a pointer or reference, MISRA Rule 11.5</name>
+    <description>            
+    attempt to cast away const/volatile from a pointer or reference</description>    
+  </rule> 
+  <rule>
+    <key>M12.1</key>
+    <configkey>M12.1</configkey>
+    <priority>INFO</priority>
+    <name>dependence on C's operator precedence, MISRA advisory Rule 12.1</name>
+    <description>            
+    dependence on C's operator precedence</description>    
+  </rule> 
+  <rule>
+    <key>M12.2</key>
+    <configkey>M12.2</configkey>
+    <priority>INFO</priority>
+    <name>order of evaluation, MISRA advisory Rule 12.2</name>
+    <description>            
+    order of evaluation</description>    
+  </rule>
+  <rule>
+    <key>M12.3</key>
+    <configkey>M12.3</configkey>
+    <priority>INFO</priority>
+    <name>'sizeof' used on expressions with side effect, MISRA Rule 12.3</name>
+    <description>            
+    'sizeof' used on expressions with side effect</description>    
+  </rule>  
+  <rule>
+    <key>M12.4</key>
+    <configkey>M12.4</configkey>
+    <priority>INFO</priority>
+    <name>Side effects on right hand side of logical operator, MISRA Rule 12.4</name>
+    <description>            
+    Side effects on right hand side of logical operator.</description>    
+  </rule>  
+  <rule>
+    <key>M12.5</key>
+    <configkey>M12.5</configkey>
+    <priority>INFO</priority>
+    <name>non-primary expression used with logical operator, MISRA Rule 12.5</name>
+    <description>            
+    non-primary expression used with logical operator</description>    
+  </rule> 
+  <rule>
+    <key>M12.6</key>
+    <configkey>M12.6</configkey>
+    <priority>INFO</priority>
+    <name>boolean expression required for logical operator, MISRA advisory Rule 12.6</name>
+    <description>            
+    boolean expression required for logical operator</description>    
+  </rule>
+  <rule>
+    <key>M12.7</key>
+    <configkey>M12.7</configkey>
+    <priority>INFO</priority>
+    <name>Bitwise operator applied to signed underlying type, MISRA Rule 12.7</name>
+    <description>            
+    Bitwise operator applied to signed underlying type.</description>    
+  </rule>  
+  <rule>
+    <key>M12.8</key>
+    <configkey>M12.8</configkey>
+    <priority>INFO</priority>
+    <name>excessive shift value, MISRA Rule 12.8</name>
+    <description>            
+    excessive shift value</description>    
+  </rule> 
+  <rule>
+    <key>M12.9</key>
+    <configkey>M12.9</configkey>
+    <priority>INFO</priority>
+    <name>Prohibited operator applied to unsigned underlying type, MISRA Rule 12.9</name>
+    <description>            
+    Prohibited operator applied to unsigned underlying type.</description>    
+  </rule>  
+  <rule>
+    <key>M12.10</key>
+    <configkey>M12.10</configkey>
+    <priority>INFO</priority>
+    <name>Comma operator used outside of 'for' expression, MISRA Rule 12.10</name>
+    <description>            
+    Comma operator used outside of 'for' expression.</description>    
+  </rule>  
+  <rule>
+    <key>M12.11</key>
+    <configkey>M12.11</configkey>
+    <priority>INFO</priority>
+    <name>overflow in computing constant, MISRA advisory Rule 12.11</name>
+    <description>            
+    overflow in computing constant</description>    
+  </rule>
+  <rule>
+    <key>M12.12</key>
+    <configkey>M12.12</configkey>
+    <priority>INFO</priority>
+    <name>bit representation of a floating point type used, MISRA Rule 12.12</name>
+    <description>            
+    bit representation of a floating point type used</description>    
+  </rule>
+  <rule>
+    <key>M12.13</key>
+    <configkey>M12.13</configkey>
+    <priority>INFO</priority>
+    <name>increment or decrement combined with another operator, MISRA advisory Rule 12.13</name>
+    <description>            
+    increment or decrement combined with another operator</description>    
+  </rule>
+  <rule>
+    <key>M13.1</key>
+    <configkey>M13.1</configkey>
+    <priority>INFO</priority>
+    <name>boolean test of assignment, MISRA Rule 13.1</name>
+    <description>            
+    boolean test of assignment</description>    
+  </rule>
+  <rule>
+    <key>M13.2</key>
+    <configkey>M13.2</configkey>
+    <priority>INFO</priority>
+    <name>boolean test of assignment, MISRA advisory Rule 13.2</name>
+    <description>            
+    boolean test of assignment</description>    
+  </rule>
+  <rule>
+    <key>M13.3</key>
+    <configkey>M13.3</configkey>
+    <priority>INFO</priority>
+    <name>testing floats for equality, MISRA advisory Rule 13.3</name>
+    <description>            
+    testing floats for equality, partialy covered</description>    
+  </rule>
+  <rule>
+    <key>M13.4</key>
+    <configkey>M13.4</configkey>
+    <priority>INFO</priority>
+    <name>Floating point variable used as loop counter, MISRA Rule 13.4</name>
+    <description>            
+    Floating point variable used as loop counter.</description>    
+  </rule>  
+  <rule>
+    <key>M13.5</key>
+    <configkey>M13.5</configkey>
+    <priority>INFO</priority>
+    <name>„for‟ loop expressions do not match, MISRA Rule 13.5</name>
+    <description>            
+    „for‟ loop expressions do not match</description>    
+  </rule> 
+  <rule>
+    <key>M13.6</key>
+    <configkey>M13.6</configkey>
+    <priority>INFO</priority>
+    <name>detect loop variables modified within the loop, MISRA Rule 13.6</name>
+    <description>            
+    detect loop variables modified within the loop</description>
+  </rule>
+  <rule>
+    <key>M13.7</key>
+    <configkey>M13.7</configkey>
+    <priority>INFO</priority>
+    <name>constant value Boolean, MISRA Rule 13.7</name>
+    <description>            
+    constant value Boolean</description>
+  </rule>
+  <rule>
+    <key>M14.1</key>
+    <configkey>M14.1</configkey>
+    <priority>INFO</priority>
+    <name>unreachable code, MISRA Rule 14.1</name>
+    <description>            
+    unreachable code</description>
+  </rule>
+  <rule>
+    <key>M14.2</key>
+    <configkey>M14.2</configkey>
+    <priority>INFO</priority>
+    <name>non-null statement has no effect, MISRA Rule 14.2</name>
+    <description>            
+    non-null statement has no effect</description>
+  </rule>
+  <rule>
+    <key>M143</key>
+    <configkey>M143</configkey>
+    <priority>INFO</priority>
+    <name>Null statement not in line by itself, MISRA Rule 14.3</name>
+    <description>            
+    Null statement not in line by itself.</description>    
+  </rule>  
+  <rule>
+    <key>M14.4</key>
+    <configkey>M14.4</configkey>
+    <priority>INFO</priority>
+    <name>do not use goto, MISRA Rule 14.4</name>
+    <description>            
+    do not use goto</description>    
+  </rule>  
+  <rule>
+    <key>M14.5</key>
+    <configkey>M14.5</configkey>
+    <priority>INFO</priority>
+    <name>continue statement should not be used, MISRA Rule 14.5</name>
+    <description>            
+    continue statement should not be used.</description>    
+  </rule>  
+  <rule>
+    <key>M14.6</key>
+    <configkey>M14.6</configkey>
+    <priority>INFO</priority>
+    <name>More than one 'break' terminates loop, MISRA Rule 14.6</name>
+    <description>            
+    More than one 'break' terminates loop.</description>    
+  </rule> 
+  <rule>
+    <key>M14.7</key>
+    <configkey>M14.7</configkey>
+    <priority>INFO</priority>
+    <name>return before function end, MISRA Rule 14.7</name>
+    <description>            
+    return before function end</description>    
+  </rule>
+  <rule>
+    <key>M14.8</key>
+    <configkey>M14.8</configkey>
+    <priority>INFO</priority>
+    <name>use braces around body of switch, else, for, do, while, MISRA Rule 14.8</name>
+    <description>            
+    use braces around body of switch, else, for, do, while</description>    
+  </rule> 
+  <rule>
+    <key>M14.9</key>
+    <configkey>M14.9</configkey>
+    <priority>INFO</priority>
+    <name>use braces around body of if, else, else if, MISRA Rule 14.9</name>
+    <description>            
+    use braces around body of if, else, else if</description>    
+  </rule>  
+  <rule>
+    <key>M14.10</key>
+    <configkey>M14.10</configkey>
+    <priority>INFO</priority>
+    <name>No 'else' at end of 'if ... else if' chain, MISRA Rule 14.10</name>
+    <description>            
+    No 'else' at end of 'if ... else if' chain.</description>    
+  </rule>
+  <rule>
+    <key>M15.0</key>
+    <configkey>M15.0</configkey>
+    <priority>INFO</priority>
+    <name>use MISRA switch syntax, MISRA Rule 15.0</name>
+    <description>            
+    use MISRA switch syntax</description>    
+  </rule>
+  <rule>
+    <key>M15.1</key>
+    <configkey>M15.1</configkey>
+    <priority>INFO</priority>
+    <name>need a switch, MISRA Rule 15.1</name>
+    <description>            
+    need a switch</description>    
+  </rule>
+  <rule>
+    <key>M15.2</key>
+    <configkey>M15.2</configkey>
+    <priority>INFO</priority>
+    <name>use break to terminate case, MISRA Rule 15.2</name>
+    <description>            
+    use break to terminate case</description>    
+  </rule>
+  <rule>
+    <key>M15.3</key>
+    <configkey>M15.3</configkey>
+    <priority>INFO</priority>
+    <name>case label follows default in switch statement, MISRA Rule 15.3</name>
+    <description>            
+    case label follows default in switch statement</description>
+  </rule>
+  <rule>
+    <key>M15.4</key>
+    <configkey>M15.4</configkey>
+    <priority>INFO</priority>
+    <name>Boolean value in switch expression, MISRA Rule 15.4</name>
+    <description>            
+    Boolean value in switch expression</description>    
+  </rule>
+  <rule>
+    <key>M15.5</key>
+    <configkey>M15.5</configkey>
+    <priority>INFO</priority>
+    <name>switch does not have a case, MISRA Rule 15.5</name>
+    <description>            
+    switch does not have a case</description>    
+  </rule>
+  <rule>
+    <key>M16.1</key>
+    <configkey>M16.1</configkey>
+    <priority>INFO</priority>
+    <name>Function has variable number of arguments, MISRA Rule 16.1</name>
+    <description>            
+    Function has variable number of arguments.</description>    
+  </rule>
+  <rule>
+    <key>M16.2</key>
+    <configkey>M16.2</configkey>
+    <priority>INFO</priority>
+    <name>do not use recursive functions, MISRA Rule 16.2</name>
+    <description>            
+    do not use recursive functions</description>    
+  </rule>
+  <rule>
+    <key>M16.3</key>
+    <configkey>M16.3</configkey>
+    <priority>INFO</priority>
+    <name>use identifiers for all parameters in a prototype, MISRA Rule 16.3</name>
+    <description>            
+    use identifiers for all parameters in a prototype</description>    
+  </rule>
+  <rule>
+    <key>M16.4</key>
+    <configkey>M16.4</configkey>
+    <priority>INFO</priority>
+    <name>function parameter list differs from prior declaration, MISRA Rule 16.4</name>
+    <description>            
+    function parameter list differs from prior declaration</description>    
+  </rule>
+  <rule>
+    <key>M16.5</key>
+    <configkey>M16.5</configkey>
+    <priority>INFO</priority>
+    <name>function declaration is missing type info, MISRA Rule 16.5</name>
+    <description>            
+    function declaration is missing type info</description>    
+  </rule>
+  <rule>
+    <key>M16.6</key>
+    <configkey>M16.6</configkey>
+    <priority>INFO</priority>
+    <name>too few or too many arguments for prototype, MISRA Rule 16.6</name>
+    <description>            
+    too few or too many arguments for prototype</description>    
+  </rule>
+  <rule>
+    <key>M16.7</key>
+    <configkey>M16.7</configkey>
+    <priority>INFO</priority>
+    <name>use const on paramaters where appropriate, MISRA advisory Rule 16.7</name>
+    <description>            
+    use const on paramaters where appropriate</description>    
+  </rule>
+  <rule>
+    <key>M16.8</key>
+    <configkey>M16.8</configkey>
+    <priority>INFO</priority>
+    <name>function should return a value, MISRA Rule 16.8</name>
+    <description>            
+    function should return a value</description>    
+  </rule>
+  <rule>
+    <key>M16.9</key>
+    <configkey>M16.9</configkey>
+    <priority>INFO</priority>
+    <name>function identifier used without „&amp;‟ or parenthesized parameter list, MISRA Rule 16.9</name>
+    <description>            
+    function identifier used without „&amp;‟ or parenthesized parameter list</description>    
+  </rule>
+  <rule>
+    <key>M16.10</key>
+    <configkey>M16.10</configkey>
+    <priority>INFO</priority>
+    <name>ignoring return value of function, MISRA Rule 16.10</name>
+    <description>            
+    ignoring return value of function</description>
+  </rule>
+  <rule>
+    <key>M17.1</key>
+    <configkey>M17.1</configkey>
+    <priority>INFO</priority>
+    <name>pointer arithmetic used on non-array, MISRA Rule 17.1</name>
+    <description>            
+    pointer arithmetic used on non-array</description>
+  </rule>
+  <rule>
+    <key>M17.2</key>
+    <configkey>M17.2</configkey>
+    <priority>INFO</priority>
+    <name>relational or subtract operator applied to pointers, MISRA Rule 17.2</name>
+    <description>            
+    relational or subtract operator applied to pointers</description>
+  </rule>
+  <rule>
+    <key>M17.3</key>
+    <configkey>M17.3</configkey>
+    <priority>INFO</priority>
+    <name>relational or subtract operator applied to pointers, MISRA Rule 17.3</name>
+    <description>            
+    relational or subtract operator applied to pointers</description>
+  </rule>
+  <rule>
+    <key>M17.4</key>
+    <configkey>M17.4</configkey>
+    <priority>INFO</priority>
+    <name>pointer arithmetic by increment or decrement, MISRA Rule 17.4</name>
+    <description>            
+    pointer arithmetic by increment or decrement</description>
+  </rule>
+  <rule>
+    <key>M17.5</key>
+    <configkey>M17.5</configkey>
+    <priority>INFO</priority>
+    <name>more than two pointer indirection levels used, MISRA advisory Rule 17.5</name>
+    <description>            
+    more than two pointer indirection levels used</description>
+  </rule>
+  <rule>
+    <key>M17.6</key>
+    <configkey>M17.6</configkey>
+    <priority>INFO</priority>
+    <name>assigning address of auto to outer scope symbol or to static, MISRA Rule 17.6</name>
+    <description>            
+    assigning address of auto to outer scope symbol or to static</description>
+  </rule>
+  <rule>
+    <key>M18.1</key>
+    <configkey>M18.1</configkey>
+    <priority>INFO</priority>
+    <name>vacuous type for variable, MISRA Rule 18.1</name>
+    <description>            
+    vacuous type for variable</description>    
+  </rule>  
+  <rule>
+    <key>M18.4</key>
+    <configkey>M18.4</configkey>
+    <priority>INFO</priority>
+    <name>Unions shall not be used,MISRA Rule 18.4</name>
+    <description>            
+    Unions shall not be used.</description>    
+  </rule>
+  <rule>
+    <key>M19.1</key>
+    <configkey>M19.1</configkey>
+    <priority>INFO</priority>
+    <name>only preprocessor statements and comments before '#include', MISRA Advisory Rule 19.1</name>
+    <description>            
+    only preprocessor statements and comments before '#include'</description>    
+  </rule>
+  <rule>
+    <key>M19.2</key>
+    <configkey>M19.2</configkey>
+    <priority>INFO</priority>
+    <name>header file name with non-standard character, MISRA Advisory Rule 19.2</name>
+    <description>            
+    header file name with non-standard character</description>    
+  </rule>
+  <rule>
+    <key>M19.3</key>
+    <configkey>M19.3</configkey>
+    <priority>INFO</priority>
+    <name>need &lt; or " after #include, MISRA Rule 19.3</name>
+    <description>            
+    need &lt; or " after #include</description>    
+  </rule>
+  <rule>
+    <key>M19.4</key>
+    <configkey>M19.4</configkey>
+    <priority>INFO</priority>
+    <name>expression-like macro not parenthesized, MISRA Rule 19.4</name>
+    <description>            
+    expression-like macro not parenthesized</description>    
+  </rule>
+  <rule>
+    <key>M19.5</key>
+    <configkey>M19.5</configkey>
+    <priority>INFO</priority>
+    <name>'#define/#undef' used within a block, MISRA Rule 19.5</name>
+    <description>            
+    '#define/#undef' used within a block.</description>    
+  </rule>
+  <rule>
+    <key>M19.6</key>
+    <configkey>M19.6</configkey>
+    <priority>INFO</priority>
+    <name>Use of '#undef' prohibited, MISRA Rule 19.6</name>
+    <description>            
+    Use of '#undef' prohibited</description>    
+  </rule>
+  <rule>
+    <key>M19.7</key>
+    <configkey>M19.7</configkey>
+    <priority>INFO</priority>
+    <name>use function instead of function-like macro, MISRA advisory Rule 19.7</name>
+    <description>            
+    use function instead of function-like macro</description>    
+  </rule>
+  <rule>
+    <key>M19.8</key>
+    <configkey>M19.8</configkey>
+    <priority>INFO</priority>
+    <name>syntax error in call of macro, MISRA Rule 19.8</name>
+    <description>            
+    syntax error in call of macro</description>    
+  </rule>
+  <rule>
+    <key>M19.9</key>
+    <configkey>M19.9</configkey>
+    <priority>INFO</priority>
+    <name>preprocessor directives in macro invocation, MISRA Rule 19.9</name>
+    <description>            
+    preprocessor directives in macro invocation</description>    
+  </rule>
+  <rule>
+    <key>M19.10</key>
+    <configkey>19.10</configkey>
+    <priority>INFO</priority>
+    <name>expression-like macro not parenthesized, MISRA Rule 19.10</name>
+    <description>            
+    expression-like macro not parenthesized</description>    
+  </rule>
+  <rule>
+    <key>M19.11</key>
+    <configkey>M19.11</configkey>
+    <priority>INFO</priority>
+    <name>undefined preprocessor variable, MISRA Rule 19.11</name>
+    <description>            
+    undefined preprocessor variable</description>    
+  </rule>
+  <rule>
+    <key>M19.12</key>
+    <configkey>M19.12</configkey>
+    <priority>INFO</priority>
+    <name>Multiple use of '#' and/or '##' operators in macro definition, MISRA Rule 19.12</name>
+    <description>            
+    Multiple use of '#' and/or '##' operators in macro definition.</description>    
+  </rule>
+  <rule>
+    <key>M19.13</key>
+    <configkey>M19.13</configkey>
+    <priority>INFO</priority>
+    <name>do not use of # or ## operators in macro definition, MISRA advisory Rule 19.13</name>
+    <description>            
+    do not use of # or ## operators in macro definition</description>    
+  </rule>
+  <rule>
+    <key>M19.14</key>
+    <configkey>M19.14</configkey>
+    <priority>INFO</priority>
+    <name>Non-standard use of 'defined' preprocessor operator, MISRA Rule 19.14</name>
+    <description>            
+    Non-standard use of 'defined' preprocessor operator.</description>    
+  </rule>
+  <rule>
+    <key>M19.15</key>
+    <configkey>M19.15</configkey>
+    <priority>INFO</priority>
+    <name>repeated include file, MISRA Rule 19.15</name>
+    <description>            
+    repeated include file</description>    
+  </rule>
+  <rule>
+    <key>M19.16</key>
+    <configkey>M19.16</configkey>
+    <priority>INFO</priority>
+    <name>#endif or #else is not followed by EOL, MISRA Rule 19.16</name>
+    <description>            
+    #endif or #else is not followed by EOL</description>    
+  </rule>
+  <rule>
+    <key>M19.17</key>
+    <configkey>M19.17</configkey>
+    <priority>INFO</priority>
+    <name>#if not closed within file, MISRA Rule 19.17</name>
+    <description>            
+    #if not closed within file</description>    
+  </rule>
+  <rule>
+    <key>M20.1</key>
+    <configkey>M20.1</configkey>
+    <priority>INFO</priority>
+    <name>do not redefine standard functions, MISRA Rule 20.1</name>
+    <description>            
+    do not redefine standard functions</description>    
+  </rule>
+  <rule>
+    <key>M20.2</key>
+    <configkey>M20.2</configkey>
+    <priority>INFO</priority>
+    <name>re-use of reserved identifier, MISRA Rule 20.2</name>
+    <description>            
+    re-use of reserved identifier</description>    
+  </rule>
+  <rule>
+    <key>M20.3</key>
+    <configkey>M20.3</configkey>
+    <priority>INFO</priority>
+    <name>calls to standard library functions are checked, MISRA Rule 20.3</name>
+    <description>            
+    calls to standard library functions are checked</description>    
+  </rule>
+  <rule>
+    <key>M20.4</key>
+    <configkey>M20.4</configkey>
+    <priority>INFO</priority>
+    <name>do not use dynamic heap allocation, MISRA Rule 20.4</name>
+    <description>            
+    do not use dynamic heap allocation</description>    
+  </rule>
+  <rule>
+    <key>M20.5</key>
+    <configkey>M20.5</configkey>
+    <priority>INFO</priority>
+    <name>do not use errno, MISRA Rule 20.5</name>
+    <description>            
+    do not use errno</description>    
+  </rule>
+  <rule>
+    <key>M20.6</key>
+    <configkey>M20.6</configkey>
+    <priority>INFO</priority>
+    <name>do not use offsetof, MISRA Rule 20.6</name>
+    <description>            
+    do not use offsetof</description>    
+  </rule>
+  <rule>
+    <key>M20.7</key>
+    <configkey>M20.7</configkey>
+    <priority>INFO</priority>
+    <name>do not use longjmp, setjmp, MISRA Rule 20.7</name>
+    <description>            
+    do not use longjmp, setjmp</description>    
+  </rule>
+  <rule>
+    <key>M20.8</key>
+    <configkey>M20.8</configkey>
+    <priority>INFO</priority>
+    <name>do not use signal, raise, MISRA Rule 20.8</name>
+    <description>            
+    do not use signal, raise</description>    
+  </rule>
+  <rule>
+    <key>M20.9</key>
+    <configkey>M20.9</configkey>
+    <priority>INFO</priority>
+    <name>do not use stdio.h, MISRA Rule 20.9</name>
+    <description>            
+    do not use stdio.h</description>    
+  </rule>
+  <rule>
+    <key>M20.10</key>
+    <configkey>M20.10</configkey>
+    <priority>INFO</priority>
+    <name>do not use atof, atio, atoll, MISRA Rule 20.10</name>
+    <description>            
+    do not use atof, atio, atoll</description>    
+  </rule>
+  <rule>
+    <key>M20.11</key>
+    <configkey>M20.11</configkey>
+    <priority>INFO</priority>
+    <name>do not use abort, exit, getenv, system, MISRA Rule 20.11</name>
+    <description>            
+    do not use abort, exit, getenv, system</description>    
+  </rule>
+  <rule>
+    <key>M20.12</key>
+    <configkey>M20.12</configkey>
+    <priority>INFO</priority>
+    <name>do not use time, strftime, clock, difftime, mktime, MISRA Rule 20.12</name>
+    <description>            
+    do not use time, strftime, clock, difftime, mktime</description>    
+  </rule>
+  <rule>
+    <key>M21.1</key>
+    <configkey>M21.1</configkey>
+    <priority>INFO</priority>
+    <name>static analysis by using PC-lint/FlexeLint, MISRA Rule 21.1</name>
+    <description>            
+    static analysis by using PC-lint/FlexeLint</description>    
+  </rule>
+  <rule>
+    <key>M0-1-8</key>
+    <configkey>M0-1-8</configkey>
+    <priority>INFO</priority>
+    <name>Void return type for function without external side-effects, MISRA C++ Rule 0-1-8</name>
+    <description>Void return type for function without external side-effects.</description>
+  </rule>
+  <rule>
+    <key>M2-13-2</key>
+    <configkey>M2-13-2</configkey>
+    <priority>INFO</priority>
+    <name>Octal constant or escape sequence used, MISRA C++ Rule 2-13-2</name>
+    <description>Octal constant or escape sequence used.</description>
+  </rule>
+  <rule>
+    <key>M2-13-4</key>
+    <configkey>M2-13-4</configkey>
+    <priority>INFO</priority>
+    <name>Lower case literal suffix, MISRA C++ Rule 2-13-4</name>
+    <description>Lower case literal suffix.</description>
+  </rule>
+  <rule>
+    <key>M3-1-1</key>
+    <configkey>M3-1-1</configkey>
+    <priority>INFO</priority>
+    <name>Object/function definitions in headers, MISRA C++ Rule 3-1-1</name>
+    <description>Object/function definitions in headers.</description>
+  </rule>
+  <rule>
+    <key>M3-1-2</key>
+    <configkey>M3-1-2</configkey>
+    <priority>INFO</priority>
+    <name>Function not declared at file scope, MISRA C++ Rule 3-1-2</name>
+    <description>Function not declared at file scope.</description>
+  </rule>
+  <rule>
+    <key>M5-0-3</key>
+    <configkey>M5-0-3</configkey>
+    <priority>INFO</priority>
+    <name>Implicit conversion of cvalue, MISRA C++ Rule 5-0-3</name>
+    <description>Implicit conversion of cvalue.</description>
+  </rule>
+  <rule>
+    <key>M5-0-4</key>
+    <configkey>M5-0-4</configkey>
+    <priority>INFO</priority>
+    <name>Implicit conversion changes signedness, MISRA C++ Rule 5-0-4</name>
+    <description>Implicit conversion changes signedness.</description>
+  </rule>
+  <rule>
+    <key>M5-0-5</key>
+    <configkey>M5-0-5</configkey>
+    <priority>INFO</priority>
+    <name>Implicit conversion between integer and floating point types, MISRA C++ Rule 5-0-5</name>
+    <description>Implicit conversion between integer and floating point types.</description>
+  </rule>
+  <rule>
+    <key>M5-0-6</key>
+    <configkey>M5-0-6</configkey>
+    <priority>INFO</priority>
+    <name>Implicit conversion to smaller type, MISRA C++ Rule 5-0-6</name>
+    <description>Implicit conversion to smaller type.</description>
+  </rule>
+  <rule>
+    <key>M5-0-7</key>
+    <configkey>M5-0-7</configkey>
+    <priority>INFO</priority>
+    <name>Cast of cvalue between integer and floating point types, MISRA C++ Rule 5-0-7</name>
+    <description>Cast of cvalue between integer and floating point types.</description>
+  </rule>
+  <rule>
+    <key>M5-0-8</key>
+    <configkey>M5-0-8</configkey>
+    <priority>INFO</priority>
+    <name>Cast of cvalue to larger type, MISRA C++ Rule 5-0-8</name>
+    <description>Cast of cvalue to larger type.</description>
+  </rule>
+  <rule>
+    <key>M5-0-9</key>
+    <configkey>M5-0-9</configkey>
+    <priority>INFO</priority>
+    <name>Cast of cvalue changes signedness, MISRA C++ Rule 5-0-9</name>
+    <description>Cast of cvalue changes signedness.</description>
+  </rule>
+  <rule>
+    <key>M5-0-10</key>
+    <configkey>M5-0-10</configkey>
+    <priority>INFO</priority>
+    <name>Recasting required for operators '~' and '&lt;&lt;', MISRA C++ Rule 5-0-10</name>
+    <description>Recasting required for operators '~' and '&lt;&lt;'.</description>
+  </rule>
+  <rule>
+    <key>M5-0-15</key>
+    <configkey>M5-0-15</configkey>
+    <priority>INFO</priority>
+    <name>pointer arithmetic other than array indexing used, MISRA C++ Rule 5-0-15</name>
+    <description>pointer arithmetic other than array indexing used.</description>
+  </rule>
+  <rule>
+    <key>M5-0-19</key>
+    <configkey>M5-0-19</configkey>
+    <priority>INFO</priority>
+    <name>More than two pointer indirection levels used, MISRA C++ Rule 5-0-19</name>
+    <description>More than two pointer indirection levels used.</description>
+  </rule>
+  <rule>
+    <key>M5-0-21</key>
+    <configkey>M5-0-21</configkey>
+    <priority>INFO</priority>
+    <name>Bitwise operator applied to signed underlying type, MISRA C++ Rule 5-0-21</name>
+    <description>Bitwise operator applied to signed underlying type .</description>
+  </rule>
+  <rule>
+    <key>M5-2-1</key>
+    <configkey>M5-2-1</configkey>
+    <priority>INFO</priority>
+    <name>non-postfix expression used with logical operator, MISRA C++ Rule 5-2-1</name>
+    <description>non-postfix expression used with logical operator.</description>
+  </rule>
+  <rule>
+    <key>M5-2-5</key>
+    <configkey>M5-2-5</configkey>
+    <priority>INFO</priority>
+    <name>attempt to cast away const/volatile from a pointer or reference, MISRA C++ Rule 5-2-5</name>
+    <description>attempt to cast away const/volatile from a pointer or reference.</description>
+  </rule>
+  <rule>
+    <key>M5-2-12</key>
+    <configkey>M5-2-12</configkey>
+    <priority>INFO</priority>
+    <name>Array-pointer decay when passing the array to a function, MISRA C++ Rule 5-2-12</name>
+    <description>Array-pointer decay when passing the array to a function.</description>
+  </rule>
+  <rule>
+    <key>M5-2-15</key>
+    <configkey>M5-2-15</configkey>
+    <priority>INFO</priority>
+    <name>attempt to cast away const/volatile from a pointer or reference, MISRA C++ Rule 5-2-15</name>
+    <description>attempt to cast away const/volatile from a pointer or reference.</description>
+  </rule>  
+  <rule>
+    <key>M5-3-1</key>
+    <configkey>M5-3-1</configkey>
+    <priority>INFO</priority>
+    <name>boolean expression required for operator: '||'; the -strong(B,...) option can help provide Boolean-by-enforcement, MISRA C++ Rule 5-3-1</name>
+    <description>boolean expression required for operator: '||'; the -strong(B,...) option can help provide Boolean-by-enforcement.</description>
+  </rule>
+    <rule>
+    <key>M5-3-2</key>
+    <configkey>M5-3-2</configkey>
+    <priority>INFO</priority>
+    <name>Prohibited operator applied to unsigned underlying type, MISRA C++ Rule 5-3-2</name>
+    <description>Prohibited operator applied to unsigned underlying type.</description>
+  </rule>
+  <rule>
+    <key>M5-3-3</key>
+    <configkey>M5-3-3</configkey>
+    <priority>INFO</priority>
+    <name>Overloading unary &amp;, MISRA C++ Rule 5-3-3</name>
+    <description>Overloading unary &amp;</description>
+  </rule>
+  <rule>
+    <key>M5-3-4</key>
+    <configkey>M5-3-4</configkey>
+    <priority>INFO</priority>
+    <name>'sizeof' used on expressions with side effect, MISRA C++ Rule 5-3-4</name>
+    <description>'sizeof' used on expressions with side effect.</description>
+  </rule>
+  <rule>
+    <key>M5-14-1</key>
+    <configkey>M5-14-1</configkey>
+    <priority>INFO</priority>
+    <name>Side effects on right hand side of logical operator, MISRA C++ Rule 5-14-1</name>
+    <description>Side effects on right hand side of logical operator.</description>
+  </rule>
+  <rule>
+    <key>M5-18-1</key>
+    <configkey>M5-18-1</configkey>
+    <priority>INFO</priority>
+    <name>Comma operator used, MISRA C++ Rule 5-18-1</name>
+    <description>Comma operator used.</description>
+  </rule>
+  <rule>
+    <key>M6-2-1</key>
+    <configkey>M6-2-1</configkey>
+    <priority>INFO</priority>
+    <name>assignment operator used in sub-expression, MISRA C++ Rule 6-2-1</name>
+    <description>assignment operator used in sub-expression.</description>
+  </rule>
+  <rule>
+    <key>M6-2-3</key>
+    <configkey>M6-2-3</configkey>
+    <priority>INFO</priority>
+    <name>Null statement not in line by itself, MISRA C++ Rule 6-2-3</name>
+    <description>Null statement not in line by itself.</description>
+  </rule>
+  <rule>
+    <key>M6-3-1</key>
+    <configkey>M6-3-1</configkey>
+    <priority>INFO</priority>
+    <name>Left brace expected for if, else, for, do, switch and while, MISRA C++ Rule 6-2-3</name>
+    <description>Left brace expected for if, else, for, do, switch and while.</description>
+  </rule>  
+  <rule>
+    <key>M6-4-1</key>
+    <configkey>M6-4-1</configkey>
+    <priority>INFO</priority>
+    <name>Left brace expected for if, else, for, do, switch and while, MISRA C++ Rule 6-2-3</name>
+    <description>Left brace expected for if, else, for, do, switch and while.</description>
+  </rule>
+  <rule>
+    <key>M6-4-2</key>
+    <configkey>M6-4-2</configkey>
+    <priority>INFO</priority>
+    <name>No 'else' at end of 'if ... else if' chain, MISRA C++ Rule 6-4-2</name>
+    <description>No 'else' at end of 'if ... else if' chain.</description>
+  </rule>
+  <rule>
+    <key>M6-4-7</key>
+    <configkey>M6-4-7</configkey>
+    <priority>INFO</priority>
+    <name>Boolean value in switch expression, MISRA C++ Rule 6-4-7</name>
+    <description>Boolean value in switch expression.</description>
+  </rule>
+  <rule>
+    <key>M6-6-2</key>
+    <configkey>M6-6-2</configkey>
+    <priority>INFO</priority>
+    <name>Gotos jumping to an earlier point in the code, MISRA C++ Rule 6-6-2</name>
+    <description>Gotos jumping to an earlier point in the code.</description>
+  </rule>
+  <rule>
+    <key>M6-6-3</key>
+    <configkey>M6-6-3</configkey>
+    <priority>INFO</priority>
+    <name>continue statement should not be used, MISRA C++ Rule 6-6-3</name>
+    <description>continue statement should not be used.</description>
+  </rule>
+  <rule>
+    <key>M6-6-4</key>
+    <configkey>M6-6-4</configkey>
+    <priority>INFO</priority>
+    <name>More than one 'break' terminates loop, MISRA C++ Rule 6-6-4</name>
+    <description>More than one 'break' terminates loop.</description>
+  </rule>
+  <rule>
+    <key>M7-3-1</key>
+    <configkey>M7-3-1</configkey>
+    <priority>INFO</priority>
+    <name>Global declarations other than main(), namespace declarations, extern "C" declarations and arithmetic typedefs, MISRA C++ Rule 7-3-1</name>
+    <description>Global declarations other than main(), namespace declarations, extern "C" declarations and arithmetic typedefs.</description>
+  </rule>
+  <rule>
+    <key>M7-3-2</key>
+    <configkey>M7-3-2</configkey>
+    <priority>INFO</priority>
+    <name>Using the identifier main for functions other than the global one, MISRA C++ Rule 7-3-2</name>
+    <description>Using the identifier main for functions other than the global one.</description>
+  </rule>
+  <rule>
+    <key>M7-3-3</key>
+    <configkey>M7-3-3</configkey>
+    <priority>INFO</priority>
+    <name>Unnamed namespaces in headers, MISRA C++ Rule 7-3-3</name>
+    <description>Unnamed namespaces in headers.</description>
+  </rule>
+  <rule>
+    <key>M7-3-4</key>
+    <configkey>M7-3-4</configkey>
+    <priority>INFO</priority>
+    <name>No using-directives allowed, MISRA C++ Rule 7-3-4</name>
+    <description>No using-directives allowed.</description>
+  </rule>
+  <rule>
+    <key>M7-3-6</key>
+    <configkey>M7-3-6</configkey>
+    <priority>INFO</priority>
+    <name>using-directives or using declarations (except class and/or block scope using declarations) in header files, MISRA C++ Rule 7-3-6</name>
+    <description>using-directives or using declarations (except class and/or block scope using declarations) in header files.</description>
+  </rule> 
+  <rule>
+    <key>M8-0-1</key>
+    <configkey>M8-0-1</configkey>
+    <priority>INFO</priority>
+    <name>Multiple declarators in a declaration, MISRA C++ Rule 8-0-1</name>
+    <description>Multiple declarators in a declaration.</description>
+  </rule>
+  <rule>
+    <key>M8-4-1</key>
+    <configkey>M8-4-1</configkey>
+    <priority>INFO</priority>
+    <name>Function has variable number of arguments, MISRA C++ Rule 8-4-1</name>
+    <description>Function has variable number of arguments.</description>
+  </rule>
+  <rule>
+    <key>M8-5-3</key>
+    <configkey>M8-5-3</configkey>
+    <priority>INFO</priority>
+    <name>Should initialize either all enum members or only the first, MISRA C++ Rule 8-5-3</name>
+    <description>Should initialize either all enum members or only the first.</description>
+  </rule>
+  <rule>
+    <key>M9-5-1</key>
+    <configkey>M9-5-1</configkey>
+    <priority>INFO</priority>
+    <name>Unions shall not be used, MISRA C++ Rule 9-5-1</name>
+    <description>Unions shall not be used.</description>
+  </rule>
+  <rule>
+    <key>M14-8-1</key>
+    <configkey>M14-8-1</configkey>
+    <priority>INFO</priority>
+    <name>Explicit specialization of overloaded function templates, MISRA C++ Rule 14-8-1</name>
+    <description>Explicit specialization of overloaded function templates.</description>
+  </rule>
+  <rule>
+    <key>M15-1-3</key>
+    <configkey>M15-1-3</configkey>
+    <priority>INFO</priority>
+    <name>Empty throw outside of a catch block, MISRA C++ Rule 15-1-3</name>
+    <description>Empty throw outside of a catch block.</description>
+  </rule>
+  <rule>
+    <key>M15-3-7</key>
+    <configkey>M15-3-7</configkey>
+    <priority>INFO</priority>
+    <name>Catch handler after catch(...) in a try-catch sequence, MISRA C++ Rule 15-3-7</name>
+    <description>Catch handler after catch(...) in a try-catch sequence.</description>
+  </rule>
+  <rule>
+    <key>M16-0-1</key>
+    <configkey>M16-0-1</configkey>
+    <priority>INFO</priority>
+    <name>Only preprocessor statements and comments before '#include', MISRA C++ Rule 16-0-1</name>
+    <description>Only preprocessor statements and comments before '#include'.</description>
+  </rule>
+  <rule>
+    <key>M16-0-2</key>
+    <configkey>M16-0-2</configkey>
+    <priority>INFO</priority>
+    <name>'#define/#undef' used within a block, MISRA C++ Rule 16-0-2</name>
+    <description>'#define/#undef' used within a block.</description>
+  </rule>
+  <rule>
+    <key>M16-0-3</key>
+    <configkey>M16-0-3</configkey>
+    <priority>INFO</priority>
+    <name>Use of '#undef' is discouraged, MISRA C++ Rule 16-0-3</name>
+    <description>Use of '#undef' is discouraged.</description>
+  </rule>
+  <rule>
+    <key>M16-0-4</key>
+    <configkey>M16-0-4</configkey>
+    <priority>INFO</priority>
+    <name>Use of function-like macros is discouraged, MISRA C++ Rule 16-0-4</name>
+    <description>Use of function-like macros is discouraged.</description>
+  </rule>
+  <rule>
+    <key>M16-1-1</key>
+    <configkey>M16-1-1</configkey>
+    <priority>INFO</priority>
+    <name>Non-standard use of 'defined' preprocessor operator, MISRA C++ Rule 16-1-1</name>
+    <description>Non-standard use of 'defined' preprocessor operator.</description>
+  </rule>
+  <rule>
+    <key>M16-2-4</key>
+    <configkey>M16-2-4</configkey>
+    <priority>INFO</priority>
+    <name>Header file name with non-standard character, MISRA C++ Rule 16-2-4</name>
+    <description>Header file name with non-standard character.</description>
+  </rule>
+  <rule>
+    <key>M16-3-1</key>
+    <configkey>M16-3-1</configkey>
+    <priority>INFO</priority>
+    <name>Multiple use of '#' and/or '##' operators in macro definition/FlexeLint, MISRA C++ Rule 16-3-1</name>
+    <description>Multiple use of '#' and/or '##' operators in macro definition.</description>
+  </rule>
+  <rule>
+    <key>M17-0-2</key>
+    <configkey>M17-0-2</configkey>
+    <priority>INFO</priority>
+    <name>Re-use of C++ identifier pattern, MISRA C++ Rule 17-0-2</name>
+    <description>Re-use of C++ identifier pattern.</description>
+  </rule>  
 </rules>
+

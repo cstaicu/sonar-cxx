@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <doc>
-<issue file =".\FileZip.cpp" line = "4" number = "1960" desc = "Violates MISRA C++ 2008 Required Rule 5-0-19, More than two pointer indirection levels used for type: 'struct _wireSAFEARRAY ***"/>
+
+<issue file ="FileZip.cpp" line = "4" number = "1960" desc = "Violates MISRA C++ 2008 Required Rule 5-0-19, More than two pointer indirection levels used for type: 'struct _wireSAFEARRAY ***"/>
+<issue file ="FileZip.cpp" line = "4" number = "1960" desc = "Violates MISRA C++ 2008 Required Rule 5-0-19, More than two pointer indirection levels used for type: 'struct _ITEMIDLIST ***"/>
+<issue file ="FileZip.cpp" line = "4" number = "1960" desc = "Violates MISRA C++ 2008 Required Rule 5-0-19, More than two pointer indirection levels used for type: 'const struct _ITEMIDLIST ***"/>
+<issue file ="FileZip.cpp" line = "4" number = "1960" desc = "Violates MISRA C++ 2008 Required Rule 5-0-19, More than two pointer indirection levels used for type: 'char ***"/>
+<issue file ="FileZip.cpp" line = "4" number = "1960" desc = "Violates MISRA C++ 2008 Required Rule 5-0-19, More than two pointer indirection levels used for type: 'wchar_t ***"/>
+<issue file ="FileZip.cpp" line = "4" number = "1960" desc = "Violates MISRA C++ 2008 Required Rule 5-0-19, More than two pointer indirection levels used for type: 'void ***"/>
 <issue file =".\FileZip.cpp" line = "10" number = "970" desc = "Use of modifier or type 'char' outside of a typedef"/>
 <issue file =".\FileZip.cpp" line = "48" number = "751" desc = "local typedef 'ThisClass' (line 43) not referenced"/>
 <issue file =".\FileZip.cpp" line = "58" number = "534" desc = "Ignoring return value of function '_AfxInitManaged(void)' (compare with line 75, file C:\Program Files (x86)\Microsoft Visual Studio 9.0\VC\atlmfc\include\afx.inl)"/>
@@ -10,4 +16,8 @@
 <issue file =".\ZipManager.cpp" line = "40" number = "888" desc = "case constant '0' used previously in this switch"/>
 <issue file =".\FileZip.cpp" line = "64" number = "765" desc = "external 'theApp' (line 64, file .\FileZip.cpp) could be made static"/>
 <issue file =".\FileZip.cpp" line = "66" number = "1268" desc = "Internal Error; contact Gimpel Software."/>
+<issue file =".\IFileZip.c" line = "21" number = "960" desc = "Violates MISRA 2004 Required Rule 12.5, non-primary expression used with logical operator"/>
+<issue file =".\IFileZip.c" line = "82" number = "960" desc = "Violates MISRA 2004 Required Rule 19.6, use of '#undef' is discouraged: 'MIDL_DEFINE_GUID' "/>
+<issue file =".\IFileZip.h" line = "0" number = "967" desc = "Header file '.\IFileZip.h' does not have a standard include guard"/>
+<issue file ="" line = "0" number = "1960" desc = "Violates MISRA C++ 2008 Required Rule 0-1-8, Void return type for function without external side-effects: ATL::AtlThrowImpl(long)"/>
 </doc>
