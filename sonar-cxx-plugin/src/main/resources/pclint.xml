@@ -7566,8 +7566,8 @@
     omitted braces within an initializer</description>
   </rule>
   <rule>
-    <key>M93</key>
-    <configkey>M93</configkey>
+    <key>M9.3</key>
+    <configkey>M9.3</configkey>
     <priority>INFO</priority>
     <name>Should initialize either all enum members or only the first, MISRA Rule 9.3</name>
     <description>                        
@@ -8345,6 +8345,13 @@
     <description>Void return type for function without external side-effects.</description>
   </rule>
   <rule>
+    <key>M2-5-1</key>
+    <configkey>M2-5-1</configkey>
+    <priority>INFO</priority>
+    <name>Possible digraph used, MISRA C++ Rule 2-5-1</name>
+    <description>Possible digraph used.</description>
+  </rule>
+  <rule>
     <key>M2-13-2</key>
     <configkey>M2-13-2</configkey>
     <priority>INFO</priority>
@@ -8371,6 +8378,13 @@
     <priority>INFO</priority>
     <name>Function not declared at file scope, MISRA C++ Rule 3-1-2</name>
     <description>Function not declared at file scope.</description>
+  </rule>
+  <rule>
+    <key>M5-0-2</key>
+    <configkey>M5-0-2</configkey>
+    <priority>INFO</priority>
+    <name>Dependence placed on C's operator precedence, MISRA C++ Rule 5-0-2</name>
+    <description>Dependence placed on C's operator precedence.</description>
   </rule>
   <rule>
     <key>M5-0-3</key>
@@ -8646,6 +8660,13 @@
     <description>Unions shall not be used.</description>
   </rule>
   <rule>
+    <key>M9-6-2</key>
+    <configkey>M9-6-2</configkey>
+    <priority>INFO</priority>
+    <name>Bit field must be explicitly signed int, unsigned int, or bool, MISRA C++ Rule 9-6-2</name>
+    <description>Bit field must be explicitly signed int, unsigned int, or bool.</description>
+  </rule>
+  <rule>
     <key>M14-8-1</key>
     <configkey>M14-8-1</configkey>
     <priority>INFO</priority>
@@ -8653,11 +8674,25 @@
     <description>Explicit specialization of overloaded function templates.</description>
   </rule>
   <rule>
+    <key>M14-8-2</key>
+    <configkey>M14-8-2</configkey>
+    <priority>INFO</priority>
+    <name>Mixing template and non-template functions in a viable sets, MISRA C++ Rule 14-8-2</name>
+    <description>Mixing template and non-template functions in a viable sets.</description>
+  </rule>
+  <rule>
     <key>M15-1-3</key>
     <configkey>M15-1-3</configkey>
     <priority>INFO</priority>
     <name>Empty throw outside of a catch block, MISRA C++ Rule 15-1-3</name>
     <description>Empty throw outside of a catch block.</description>
+  </rule>
+  <rule>
+    <key>M15-0-2</key>
+    <configkey>M15-0-2</configkey>
+    <priority>INFO</priority>
+    <name>Throwing a pointer expression, MISRA C++ Rule 15-0-2</name>
+    <description>Throwing a pointer expression.</description>
   </rule>
   <rule>
     <key>M15-3-7</key>
@@ -8709,11 +8744,25 @@
     <description>Header file name with non-standard character.</description>
   </rule>
   <rule>
+    <key>M16-2-5</key>
+    <configkey>M16-2-5</configkey>
+    <priority>INFO</priority>
+    <name>Header file name with non-standard character, MISRA C++ Rule 16-2-5</name>
+    <description>Header file name with non-standard character.</description>
+  </rule>
+  <rule>
     <key>M16-3-1</key>
     <configkey>M16-3-1</configkey>
     <priority>INFO</priority>
     <name>Multiple use of '#' and/or '##' operators in macro definition/FlexeLint, MISRA C++ Rule 16-3-1</name>
     <description>Multiple use of '#' and/or '##' operators in macro definition.</description>
+  </rule>
+  <rule>
+    <key>M16-3-2</key>
+    <configkey>M16-3-2</configkey>
+    <priority>INFO</priority>
+    <name>No use of '#' or '##', MISRA C++ Rule 16-3-2</name>
+    <description>No use of '#' or '##'.</description>
   </rule>
   <rule>
     <key>M17-0-2</key>

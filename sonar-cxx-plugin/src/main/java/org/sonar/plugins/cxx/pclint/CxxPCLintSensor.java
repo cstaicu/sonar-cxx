@@ -110,7 +110,7 @@ public class CxxPCLintSensor extends CxxReportSensor {
 
                     if (isInputValid(file, line, id, msg)) {
                         //remap MISRA 2004 and MISRA C++ IDs
-                        if(id.equals("960") || id.equals("961")|| id.equals("1960")) { 
+                        if(id.equals("960") || id.equals("961")|| id.equals("1960")|| id.equals("1963")) { 
                             String newId = MapMisraRulesToUniqueSonarRules(msg);
 
 
